@@ -63,19 +63,23 @@
         .container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 0 15px; /* Added padding for smaller screens */
+            padding: 0 15px;
+            /* Added padding for smaller screens */
         }
 
         header {
             background: linear-gradient(175deg, var(--theme-deep-blue), var(--theme-coral), var(--theme-gold), var(--theme-deep-blue));
             background-size: 400% 400%;
             animation: gradientShift 8s ease infinite, headerGlow 3s ease-in-out infinite;
-            width: 100%; /* Changed from fixed 1200px */
-            max-width: 1200px; /* Added max-width */
+            width: 100%;
+            /* Changed from fixed 1200px */
+            max-width: 1200px;
+            /* Added max-width */
             height: 200px;
             text-align: center;
             margin: 0 auto 60px auto;
-            padding: 50px 20px; /* Adjusted padding */
+            padding: 50px 20px;
+            /* Adjusted padding */
             border-bottom: 2px solid var(--theme-gold);
             position: relative;
             overflow: hidden;
@@ -239,9 +243,11 @@
             max-width: 1200px;
             margin: 50px auto 0 auto;
             display: flex;
-            justify-content: space-around; /* Changed for better spacing */
+            justify-content: space-around;
+            /* Changed for better spacing */
             align-items: center;
-            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            flex-wrap: wrap;
+            /* Allow wrapping on smaller screens */
             gap: 20px;
         }
 
@@ -253,7 +259,8 @@
             animation: pulse 2s infinite;
             filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
             z-index: 10;
-            order: 2; /* Default order for desktop */
+            order: 2;
+            /* Default order for desktop */
         }
 
         @keyframes pulse {
@@ -272,14 +279,20 @@
 
         /* Mode Card Container - Contains both background and card */
         .mode-card-container {
-            position: relative; /* Changed from absolute */
+            position: relative;
+            /* Changed from absolute */
             width: 350px;
             height: 500px;
         }
-        
+
         /* Set order for squad and solo cards */
-        .mode-card-container.squad-container { order: 1; }
-        .mode-card-container.solo-container { order: 3; }
+        .mode-card-container.squad-container {
+            order: 1;
+        }
+
+        .mode-card-container.solo-container {
+            order: 3;
+        }
 
 
         /* Background Box - Shows on Hover */
@@ -368,7 +381,8 @@
 
         .squad-container .mode-card-title {
             color: var(--theme-coral);
-            font-size: 24px; /* MODIFIED */
+            font-size: 24px;
+            /* MODIFIED */
         }
 
         .squad-container .mode-number {
@@ -386,7 +400,8 @@
 
         .solo-container .mode-card-title {
             color: var(--theme-deep-blue);
-            font-size: 24px; /* MODIFIED */
+            font-size: 24px;
+            /* MODIFIED */
         }
 
         .solo-container .mode-number {
@@ -416,12 +431,14 @@
             position: relative;
             top: -95px;
             left: 25px;
-            font-size: 22px; /* Base font size, will be overridden */
+            font-size: 22px;
+            /* Base font size, will be overridden */
             font-weight: 700;
             margin-bottom: 10px;
             text-transform: uppercase;
             letter-spacing: 1px;
-            text-align: left; /* Add this line */
+            text-align: left;
+            /* Add this line */
         }
 
         .mode-card-subtitle {
@@ -544,7 +561,8 @@
             display: flex;
             align-items: center;
             margin-bottom: 20px;
-            flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+            flex-wrap: wrap;
+            /* Allow buttons to wrap on small screens */
             gap: 10px;
         }
 
@@ -581,7 +599,8 @@
         .slot {
             background: #141829;
             border-radius: var(--border-radius);
-            width: 100%; /* Changed from fixed 320px */
+            width: 100%;
+            /* Changed from fixed 320px */
             height: 280px;
             padding: 20px;
             text-align: center;
@@ -769,8 +788,10 @@
             --angle: 0deg;
             position: relative;
             padding: 2px;
-            width: 100%; /* Changed from fixed 220px */
-            aspect-ratio: 1 / 1; /* Maintain square shape */
+            width: 100%;
+            /* Changed from fixed 220px */
+            aspect-ratio: 1 / 1;
+            /* Maintain square shape */
             border-radius: 12px;
             cursor: pointer;
             background: conic-gradient(from var(--angle),
@@ -910,23 +931,26 @@
             cursor: pointer;
             text-transform: uppercase;
         }
-        
+
         /* Added for solo slot booked status */
         .solo-slot .slot-booked-status {
-             margin-top: 8px;
+            margin-top: 8px;
         }
 
 
         /* Complete Registration Section */
         .complete-registration-container {
-            width: 100%; /* Changed from fixed 1200px */
+            width: 100%;
+            /* Changed from fixed 1200px */
             max-width: 1200px;
-            min-height: 150px; /* Use min-height */
+            min-height: 150px;
+            /* Use min-height */
             margin: 40px auto 0 auto;
             text-align: center;
             padding: 20px;
             background-image: url('complete-registration.png');
-            background-size: cover; /* Ensure BG covers area */
+            background-size: cover;
+            /* Ensure BG covers area */
             background-position: center;
             border: 1px solid var(--theme-deep-blue);
             border-radius: var(--border-radius);
@@ -939,7 +963,7 @@
             padding: 15px 40px;
             margin-bottom: 15px;
         }
-        
+
         .complete-btn:hover {
             box-shadow: 0 0 20px var(--theme-pink);
         }
@@ -960,10 +984,11 @@
         .btn:hover {
             transform: scale(1.05);
         }
-        
+
         .back-btn {
             background-color: var(--theme-deep-blue);
         }
+
         .back-btn:hover {
             box-shadow: 0 0 15px var(--theme-deep-blue);
         }
@@ -987,7 +1012,8 @@
             background-color: var(--theme-dark-bg);
             border: 1px solid var(--theme-deep-blue);
             border-radius: var(--border-radius);
-            width: 95%; /* Use percentage width */
+            width: 95%;
+            /* Use percentage width */
             max-width: 800px;
             margin: 0 auto;
             padding: 30px;
@@ -1026,7 +1052,7 @@
         }
 
         .player-section {
-            background-color: rgba(0,0,0,0.3);
+            background-color: rgba(0, 0, 0, 0.3);
             border-radius: var(--border-radius);
             padding: 20px;
             border: 1px solid var(--theme-deep-blue);
@@ -1077,7 +1103,7 @@
         .submit-btn {
             background-color: var(--theme-deep-blue);
         }
-        
+
         .submit-btn:hover {
             background-color: var(--theme-light-blue);
             color: #000;
@@ -1094,7 +1120,8 @@
         .export-options {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap; /* Allow wrapping */
+            flex-wrap: wrap;
+            /* Allow wrapping */
             gap: 20px;
             margin-top: 30px;
         }
@@ -1116,7 +1143,8 @@
         .toast {
             position: fixed;
             bottom: 20px;
-            left: 20px; /* Positioned to the left for better visibility on mobile */
+            left: 20px;
+            /* Positioned to the left for better visibility on mobile */
             right: 20px;
             width: auto;
             max-width: 400px;
@@ -1144,20 +1172,29 @@
         }
 
         /* --- RESPONSIVE DESIGN STYLES --- */
-        
+
         /* For Tablets and smaller desktops */
         @media (max-width: 1024px) {
             #mode-selection {
-                flex-direction: column; /* Stack cards vertically */
+                flex-direction: column;
+                /* Stack cards vertically */
                 gap: 50px;
             }
+
             .center-logo {
-                order: 1; /* Logo on top */
+                order: 1;
+                /* Logo on top */
                 width: 250px;
                 height: 250px;
             }
-            .mode-card-container.squad-container { order: 2; }
-            .mode-card-container.solo-container { order: 3; }
+
+            .mode-card-container.squad-container {
+                order: 2;
+            }
+
+            .mode-card-container.solo-container {
+                order: 3;
+            }
         }
 
         /* For smaller tablets and mobile phones */
@@ -1165,72 +1202,97 @@
             body {
                 padding: 10px;
             }
+
             header {
                 padding: 40px 15px;
                 margin-bottom: 40px;
                 height: auto;
             }
+
             header h1 {
                 font-size: 2rem;
             }
+
             header p {
                 font-size: 1rem;
             }
+
             .button-container {
                 flex-direction: column;
                 gap: 10px;
                 align-items: stretch;
             }
+
             .cancel-btn {
                 margin-left: 0;
                 width: 100%;
             }
+
             .registration-page h2 {
                 font-size: 1.8rem;
             }
+
             .mode-description {
                 font-size: 1rem;
             }
+
             .complete-btn {
                 font-size: 1.3rem;
                 padding: 15px 30px;
             }
+
             .modal-content {
                 padding: 20px 15px;
             }
         }
-        
+
         /* For mobile phones */
         @media (max-width: 480px) {
-             #mode-selection {
-                gap: 30px; /* Reduce gap between cards */
-             }
+            #mode-selection {
+                gap: 30px;
+                /* Reduce gap between cards */
+            }
+
             .center-logo {
                 width: 200px;
                 height: 200px;
             }
-             .mode-card-container, .mode-card-bg, .mode-card {
-                width: 100%; /* Make cards full width */
-                max-width: 330px; /* Keep max-width for consistency */
+
+            .mode-card-container,
+            .mode-card-bg,
+            .mode-card {
+                width: 100%;
+                /* Make cards full width */
+                max-width: 330px;
+                /* Keep max-width for consistency */
                 left: 0;
                 right: 0;
                 margin: 0 auto;
-             }
-             .mode-card {
-                left: 5px; /* Adjust card position slightly */
-             }
-             .mode-select-btn {
+            }
+
+            .mode-card {
+                left: 5px;
+                /* Adjust card position slightly */
+            }
+
+            .mode-select-btn {
                 width: 100%;
                 max-width: 270px;
-             }
+            }
+
             .player-pods {
-                grid-template-columns: 1fr; /* Stack player pods vertically */
+                grid-template-columns: 1fr;
+                /* Stack player pods vertically */
                 height: auto;
             }
+
             .slot {
-                height: auto; /* Auto height for squad slot */
-                padding-bottom: 80px; /* Add padding to avoid button overlap */
+                height: auto;
+                /* Auto height for squad slot */
+                padding-bottom: 80px;
+                /* Add padding to avoid button overlap */
             }
+
             .edit-roster-btn {
                 position: absolute;
                 bottom: 20px;
@@ -1324,7 +1386,8 @@
             </div>
 
             <h2>Squad Registration</h2>
-            <p class="mode-description">Assemble your 4-player team by selecting an empty slot below. Click an empty slot to open the registration form or a filled slot to edit your roster.</p>
+            <p class="mode-description">Assemble your 4-player team by selecting an empty slot below. Click an empty
+                slot to open the registration form or a filled slot to edit your roster.</p>
 
             <div class="slots-container" id="team-slots">
                 <!-- Team slots will be generated dynamically using JavaScript -->
@@ -1344,7 +1407,8 @@
             </div>
 
             <h2>Solo Registration</h2>
-            <p class="mode-description">Claim your spot in the battle royale! Select an empty hexagonal slot to register a player. Each slot can have one player.</p>
+            <p class="mode-description">Claim your spot in the battle royale! Select an empty hexagonal slot to register
+                a player. Each slot can have one player.</p>
 
             <div class="solo-slots-container" id="solo-slots">
                 <!-- Solo slots will be generated dynamically using JavaScript -->
@@ -1477,7 +1541,8 @@
             <div class="modal-content">
                 <span class="close-btn" id="close-export-modal">&times;</span>
                 <h2 class="modal-title">Registration Complete</h2>
-                <p style="text-align: center; margin-bottom: 20px; color:white;">All registrations have been saved. Would you like to
+                <p style="text-align: center; margin-bottom: 20px; color:white;">All registrations have been saved.
+                    Would you like to
                     export the data?</p>
 
                 <div class="export-options">
@@ -1495,9 +1560,28 @@
         <div class="toast" id="toast-notification"></div>
     </div>
 
-        <script>
+    <!-- FIREBASE: ADD THESE TWO SCRIPT TAGS -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <script>
+        // --- PASTE YOUR FIREBASE CONFIGURATION FROM STEP 2 HERE ---
+        const firebaseConfig = {
+            apiKey: "AIzaSyCPx7VeZgXZRZKsFz8Dk5R_9K3UI8XnOYk",
+            authDomain: "vmixtest-4aae4.firebaseapp.com",
+            databaseURL: "https://vmixtest-4aae4-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "vmixtest-4aae4",
+            storageBucket: "vmixtest-4aae4.firebasestorage.app",
+            messagingSenderId: "345937725808",
+            appId: "1:345937725808:web:50b57254b733e871aaa7b5"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+
         // --- ADD YOUR GOOGLE APPS SCRIPT URL HERE ---
-        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwPh2RVxVCJu4Ggdom8ONNvLEdMBfENk8zSuTCxHQeQ6BXEdim0zB3K0JcHkS19-BA4aA/exec'; 
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwPh2RVxVCJu4Ggdom8ONNvLEdMBfENk8zSuTCxHQeQ6BXEdim0zB3K0JcHkS19-BA4aA/exec';
 
         // DOM Elements
         const modeSelection = document.getElementById('mode-selection');
@@ -1532,8 +1616,9 @@
         let currentSquadSlot = null;
         let currentSoloSlot = null;
         let currentMode = null;
-        let squadTeams = [];
-        let soloPlayers = [];
+        let squadTeams = []; // This will now be a local mirror of the database data
+        let soloPlayers = []; // This will now be a local mirror of the database data
+        let latestExportData = null; // To hold data for export
 
         // Function to change background based on current page
         function changeBackground(page) {
@@ -1551,22 +1636,22 @@
             }
         }
 
-        // Cancel registration functions
+        // --- FIREBASE: MODIFIED CANCEL/RESET FUNCTIONS ---
         function cancelSquadRegistration() {
-            if (confirm('Are you sure you want to cancel all squad registrations? This will clear all data.')) {
-                squadTeams = [];
-                saveSquadTeams();
-                initializeSquadSlots();
-                showToast('Squad registration cancelled. All data has been cleared.');
+            if (confirm('Are you sure you want to cancel ALL squad registrations? This will clear the data for EVERYONE.')) {
+                // Remove the 'squads' node from Firebase
+                database.ref('squads').remove()
+                    .then(() => showToast('Squad registration cleared for all users.'))
+                    .catch(err => showToast('Error: ' + err.message, true));
             }
         }
 
         function cancelSoloRegistration() {
-            if (confirm('Are you sure you want to cancel all solo registrations? This will clear all data.')) {
-                soloPlayers = [];
-                saveSoloPlayers();
-                initializeSoloSlots();
-                showToast('Solo registration cancelled. All data has been cleared.');
+            if (confirm('Are you sure you want to cancel ALL solo registrations? This will clear the data for EVERYONE.')) {
+                // Remove the 'solos' node from Firebase
+                database.ref('solos').remove()
+                    .then(() => showToast('Solo registration cleared for all users.'))
+                    .catch(err => showToast('Error: ' + err.message, true));
             }
         }
 
@@ -1574,7 +1659,7 @@
             return Math.floor(100000 + Math.random() * 900000).toString();
         }
 
-        // --- MODIFIED SQUAD SLOTS INITIALIZATION ---
+        // --- SQUAD SLOTS INITIALIZATION (No changes needed here) ---
         function initializeSquadSlots() {
             teamSlots.innerHTML = '';
             for (let i = 2; i <= 17; i++) {
@@ -1592,25 +1677,21 @@
                         <div class="player-pod" id="slot-${i}-player-4"><span class="player-pod-ign">Player 4 Vacant</span></div>
                     </div>
                 </div>
-
                 <button class="add-team-btn">Assemble Squad</button>
-                
                 <div class="slot-filled-content">
                      <button class="edit-roster-btn">Edit Roster</button>
                      <div class="slot-booked-status">✔ Slot Booked</div>
                 </div>
-            </div>
-        `;
+            </div>`;
                 teamSlots.innerHTML += slotHTML;
             }
-
             document.querySelectorAll('.slot').forEach(btn => {
                 btn.addEventListener('click', openSquadRegistrationModal);
             });
             updateSquadSlotsUI();
         }
 
-        // --- MODIFIED SOLO SLOTS INITIALIZATION ---
+        // --- SOLO SLOTS INITIALIZATION (No changes needed here) ---
         function initializeSoloSlots() {
             soloSlots.innerHTML = '';
             for (let i = 1; i <= 64; i++) {
@@ -1619,20 +1700,16 @@
                 <div class="solo-slot-inner">
                     <div class="solo-slot-number">${i}</div>
                     <div class="solo-player-info">
-                        <div class="solo-player-icon">
-                            <img src="icon.png" alt="Player Icon">
-                        </div>
+                        <div class="solo-player-icon"><img src="icon.png" alt="Player Icon"></div>
                         <div class="solo-player-name"></div>
                         <button class="edit-player-btn">Edit</button>
                         <div class="slot-booked-status">✔ Slot Booked</div>
                     </div>
                     <button class="add-player-btn">+</button>
                 </div>
-            </div>
-        `;
+            </div>`;
                 soloSlots.innerHTML += slotHTML;
             }
-
             document.querySelectorAll('.solo-slot').forEach(btn => {
                 btn.addEventListener('click', openSoloRegistrationModal);
             });
@@ -1643,7 +1720,6 @@
             toastNotification.textContent = message;
             toastNotification.classList.add('show');
             toastNotification.classList.toggle('error', isError);
-
             setTimeout(() => {
                 toastNotification.classList.remove('show');
             }, 3000);
@@ -1695,6 +1771,7 @@
             currentSoloSlot = null;
         }
 
+        // --- FIREBASE: MODIFIED SQUAD FORM SUBMIT ---
         function handleSquadFormSubmit(event) {
             event.preventDefault();
             const teamName = document.getElementById('team-name').value.trim();
@@ -1708,34 +1785,22 @@
                 slot: currentSquadSlot,
                 teamName: teamName,
                 registrationTime: new Date().toISOString(),
-                captain: {
-                    ticketId: captainTicketId,
-                    ign: document.getElementById('captain-ign').value.trim() || `${teamName}-player1`
-                },
-                player2: {
-                    ticketId: document.getElementById('player2-ticket-id').value.trim() || generateRandomId(),
-                    ign: document.getElementById('player2-ign').value.trim() || `${teamName}-player2`
-                },
-                player3: {
-                    ticketId: document.getElementById('player3-ticket-id').value.trim() || generateRandomId(),
-                    ign: document.getElementById('player3-ign').value.trim() || `${teamName}-player3`
-                },
-                player4: {
-                    ticketId: document.getElementById('player4-ticket-id').value.trim() || generateRandomId(),
-                    ign: document.getElementById('player4-ign').value.trim() || `${teamName}-player4`
-                }
+                captain: { ticketId: captainTicketId, ign: document.getElementById('captain-ign').value.trim() || `${teamName}-player1` },
+                player2: { ticketId: document.getElementById('player2-ticket-id').value.trim() || generateRandomId(), ign: document.getElementById('player2-ign').value.trim() || `${teamName}-player2` },
+                player3: { ticketId: document.getElementById('player3-ticket-id').value.trim() || generateRandomId(), ign: document.getElementById('player3-ign').value.trim() || `${teamName}-player3` },
+                player4: { ticketId: document.getElementById('player4-ticket-id').value.trim() || generateRandomId(), ign: document.getElementById('player4-ign').value.trim() || `${teamName}-player4` }
             };
 
-            const existingTeamIndex = squadTeams.findIndex(team => team.slot === currentSquadSlot);
-            if (existingTeamIndex !== -1) squadTeams[existingTeamIndex] = teamData;
-            else squadTeams.push(teamData);
-
-            saveSquadTeams();
-            updateSquadSlotsUI();
-            showToast(`Team "${teamName}" successfully registered for Slot ${currentSquadSlot}!`);
-            closeSquadRegistrationModal();
+            // Write data to Firebase instead of a local array
+            database.ref('squads/' + currentSquadSlot).set(teamData)
+                .then(() => {
+                    showToast(`Team "${teamName}" successfully registered for Slot ${currentSquadSlot}!`);
+                    closeSquadRegistrationModal();
+                })
+                .catch(err => showToast('Error: ' + err.message, true));
         }
 
+        // --- FIREBASE: MODIFIED SOLO FORM SUBMIT ---
         function handleSoloFormSubmit(event) {
             event.preventDefault();
             const teamName = document.getElementById('solo-team-name').value.trim();
@@ -1753,80 +1818,49 @@
                 registrationTime: new Date().toISOString()
             };
 
-            const existingPlayerIndex = soloPlayers.findIndex(player => player.slot === currentSoloSlot);
-            if (existingPlayerIndex !== -1) soloPlayers[existingPlayerIndex] = playerData;
-            else soloPlayers.push(playerData);
-
-            saveSoloPlayers();
-            updateSoloSlotsUI();
-            showToast(`Player "${teamName}" successfully registered for Slot ${currentSoloSlot}!`);
-            closeSoloRegistrationModal();
+            // Write data to Firebase instead of a local array
+            database.ref('solos/' + currentSoloSlot).set(playerData)
+                .then(() => {
+                    showToast(`Player "${teamName}" successfully registered for Slot ${currentSoloSlot}!`);
+                    closeSoloRegistrationModal();
+                })
+                .catch(err => showToast('Error: ' + err.message, true));
         }
 
-        function saveSquadTeams() {
-            localStorage.setItem('bgmiSquadTeams', JSON.stringify(squadTeams));
-        }
+        // --- FIREBASE: REMOVED ALL localStorage FUNCTIONS (save/load) ---
+        // They are no longer needed. Firebase is our data store.
 
-        function saveSoloPlayers() {
-            localStorage.setItem('bgmiSoloPlayers', JSON.stringify(soloPlayers));
-        }
-
-        function loadSquadTeams() {
-            const savedData = localStorage.getItem('bgmiSquadTeams');
-            if (savedData) squadTeams = JSON.parse(savedData);
-        }
-
-        function loadSoloPlayers() {
-            const savedData = localStorage.getItem('bgmiSoloPlayers');
-            if (savedData) soloPlayers = JSON.parse(savedData);
-        }
-
-        // --- MODIFIED SQUAD UI UPDATE ---
+        // --- SQUAD UI UPDATE (no changes needed) ---
         function updateSquadSlotsUI() {
             document.querySelectorAll('.slot').forEach(slot => {
                 const slotNumber = slot.dataset.slot;
                 const team = squadTeams.find(t => t.slot === slotNumber);
-
                 const teamNameElement = slot.querySelector('.slot-team-name');
-                const player1Pod = slot.querySelector(`#slot-${slotNumber}-player-1`);
-                const player2Pod = slot.querySelector(`#slot-${slotNumber}-player-2`);
-                const player3Pod = slot.querySelector(`#slot-${slotNumber}-player-3`);
-                const player4Pod = slot.querySelector(`#slot-${slotNumber}-player-4`);
+                const p1 = slot.querySelector(`#slot-${slotNumber}-player-1`), p2 = slot.querySelector(`#slot-${slotNumber}-player-2`), p3 = slot.querySelector(`#slot-${slotNumber}-player-3`), p4 = slot.querySelector(`#slot-${slotNumber}-player-4`);
 
                 if (team) {
                     slot.classList.add('filled');
-                    teamNameElement.textContent = team.teamName;
-                    teamNameElement.classList.remove('empty');
-                    player1Pod.querySelector('.player-pod-ign').textContent = team.captain.ign;
-                    player1Pod.classList.add('filled');
-                    player2Pod.querySelector('.player-pod-ign').textContent = team.player2.ign;
-                    player2Pod.classList.add('filled');
-                    player3Pod.querySelector('.player-pod-ign').textContent = team.player3.ign;
-                    player3Pod.classList.add('filled');
-                    player4Pod.querySelector('.player-pod-ign').textContent = team.player4.ign;
-                    player4Pod.classList.add('filled');
+                    teamNameElement.textContent = team.teamName; teamNameElement.classList.remove('empty');
+                    p1.querySelector('.player-pod-ign').textContent = team.captain.ign; p1.classList.add('filled');
+                    p2.querySelector('.player-pod-ign').textContent = team.player2.ign; p2.classList.add('filled');
+                    p3.querySelector('.player-pod-ign').textContent = team.player3.ign; p3.classList.add('filled');
+                    p4.querySelector('.player-pod-ign').textContent = team.player4.ign; p4.classList.add('filled');
                 } else {
                     slot.classList.remove('filled');
-                    teamNameElement.textContent = 'Empty Slot';
-                    teamNameElement.classList.add('empty');
-                    player1Pod.querySelector('.player-pod-ign').textContent = 'Player 1 Vacant';
-                    player1Pod.classList.remove('filled');
-                    player2Pod.querySelector('.player-pod-ign').textContent = 'Player 2 Vacant';
-                    player2Pod.classList.remove('filled');
-                    player3Pod.querySelector('.player-pod-ign').textContent = 'Player 3 Vacant';
-                    player3Pod.classList.remove('filled');
-                    player4Pod.querySelector('.player-pod-ign').textContent = 'Player 4 Vacant';
-                    player4Pod.classList.remove('filled');
+                    teamNameElement.textContent = 'Empty Slot'; teamNameElement.classList.add('empty');
+                    p1.querySelector('.player-pod-ign').textContent = 'Player 1 Vacant'; p1.classList.remove('filled');
+                    p2.querySelector('.player-pod-ign').textContent = 'Player 2 Vacant'; p2.classList.remove('filled');
+                    p3.querySelector('.player-pod-ign').textContent = 'Player 3 Vacant'; p3.classList.remove('filled');
+                    p4.querySelector('.player-pod-ign').textContent = 'Player 4 Vacant'; p4.classList.remove('filled');
                 }
             });
         }
 
-        // --- MODIFIED SOLO UI UPDATE ---
+        // --- SOLO UI UPDATE (no changes needed) ---
         function updateSoloSlotsUI() {
             document.querySelectorAll('.solo-slot').forEach(slot => {
                 const slotNumber = slot.dataset.slot;
                 const player = soloPlayers.find(p => p.slot === slotNumber);
-
                 if (player) {
                     slot.classList.add('filled');
                     slot.querySelector('.solo-player-name').textContent = player.teamName;
@@ -1836,43 +1870,30 @@
                 }
             });
         }
-        
-        // --- UPDATED COMPLETE REGISTRATION FUNCTION ---
+
+        // Complete registration function (now just for exporting, not saving)
         function completeRegistration(mode) {
-            let exportData;
             if (mode === 'squad') {
-                exportData = { mode: 'squad', teams: squadTeams };
+                latestExportData = { mode: 'squad', teams: squadTeams };
             } else if (mode === 'solo') {
-                exportData = { mode: 'solo', players: soloPlayers };
+                latestExportData = { mode: 'solo', players: soloPlayers };
             }
 
-            // Show a loading toast
-            showToast('Submitting data to Google Sheet...');
-
-            // Send data to Google Apps Script
+            showToast('Submitting final data to Google Sheet...');
             fetch(GOOGLE_SCRIPT_URL, {
-                method: 'POST',
-                mode: 'no-cors', // Important for cross-origin requests to Apps Script
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(exportData)
+                method: 'POST', mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(latestExportData)
             })
-            .then(response => {
-                 // Even with no-cors, we assume success if the request doesn't throw an error
-                console.log('Successfully sent data to Google Sheet.');
-                showToast('Data successfully saved to Google Sheet!');
-                 // Also save locally and show export modal
-                const timestamp = new Date().toISOString();
-                localStorage.setItem(`bgmiRegistration_${timestamp}`, JSON.stringify(exportData));
-                exportModal.style.display = 'block';
-            })
-            .catch(error => {
-                console.error('Error sending data to Google Sheet:', error);
-                showToast('Error saving data to Google Sheet!', true);
-            });
+                .then(() => {
+                    showToast('Data successfully saved to Google Sheet!');
+                    exportModal.style.display = 'block';
+                })
+                .catch(error => {
+                    console.error('Error sending data to Google Sheet:', error);
+                    showToast('Error saving data to Google Sheet!', true);
+                });
         }
-
 
         function exportAsJSON(data) {
             const dataStr = JSON.stringify(data, null, 2);
@@ -1908,21 +1929,37 @@
         }
 
         function resetRegistration() {
-            if (currentMode === 'squad') {
-                squadTeams = [];
-                saveSquadTeams();
-                initializeSquadSlots();
-            } else if (currentMode === 'solo') {
-                soloPlayers = [];
-                saveSoloPlayers();
-                initializeSoloSlots();
-            }
+            if (currentMode === 'squad') cancelSquadRegistration();
+            else if (currentMode === 'solo') cancelSoloRegistration();
+
             squadRegistration.style.display = 'none';
             soloRegistration.style.display = 'none';
             modeSelection.style.display = 'flex';
             exportModal.style.display = 'none';
             changeBackground('mode-selection');
-            showToast('Registration data has been reset.');
+        }
+
+        // --- FIREBASE: REAL-TIME LISTENERS ---
+        function listenForSquadUpdates() {
+            const squadsRef = database.ref('squads');
+            squadsRef.on('value', (snapshot) => {
+                const data = snapshot.val();
+                // Convert Firebase object to array
+                squadTeams = data ? Object.values(data) : [];
+                console.log("Received squad update:", squadTeams);
+                updateSquadSlotsUI();
+            });
+        }
+
+        function listenForSoloUpdates() {
+            const solosRef = database.ref('solos');
+            solosRef.on('value', (snapshot) => {
+                const data = snapshot.val();
+                // Convert Firebase object to array
+                soloPlayers = data ? Object.values(data) : [];
+                console.log("Received solo update:", soloPlayers);
+                updateSoloSlotsUI();
+            });
         }
 
         // Event Listeners
@@ -1931,8 +1968,8 @@
             squadRegistration.style.display = 'block';
             currentMode = 'squad';
             changeBackground('squad');
-            loadSquadTeams();
             initializeSquadSlots();
+            listenForSquadUpdates(); // Start listening for live updates
         });
 
         soloModeBtn.addEventListener('click', () => {
@@ -1940,20 +1977,22 @@
             soloRegistration.style.display = 'block';
             currentMode = 'solo';
             changeBackground('solo');
-            loadSoloPlayers();
             initializeSoloSlots();
+            listenForSoloUpdates(); // Start listening for live updates
         });
 
         backToModesSquadBtn.addEventListener('click', () => {
             squadRegistration.style.display = 'none';
             modeSelection.style.display = 'flex';
             changeBackground('mode-selection');
+            database.ref('squads').off(); // Stop listening to save resources
         });
 
         backToModesSoloBtn.addEventListener('click', () => {
             soloRegistration.style.display = 'none';
             modeSelection.style.display = 'flex';
             changeBackground('mode-selection');
+            database.ref('solos').off(); // Stop listening to save resources
         });
 
         cancelSquadBtn.addEventListener('click', cancelSquadRegistration);
@@ -1979,14 +2018,9 @@
             completeRegistration('solo');
         });
 
-        const getLatestExportData = () => {
-            const latestKey = Object.keys(localStorage).filter(key => key.startsWith('bgmiRegistration_')).sort().pop();
-            return latestKey ? JSON.parse(localStorage.getItem(latestKey)) : null;
-        };
-
         closeExportModalBtn.addEventListener('click', () => exportModal.style.display = 'none');
-        exportJsonBtn.addEventListener('click', () => exportAsJSON(getLatestExportData()));
-        exportCsvBtn.addEventListener('click', () => exportAsCSV(getLatestExportData()));
+        exportJsonBtn.addEventListener('click', () => exportAsJSON(latestExportData));
+        exportCsvBtn.addEventListener('click', () => exportAsCSV(latestExportData));
         returnToModesBtn.addEventListener('click', resetRegistration);
 
         window.addEventListener('click', (event) => {
@@ -1996,8 +2030,6 @@
         });
 
         document.addEventListener('DOMContentLoaded', () => {
-            loadSquadTeams();
-            loadSoloPlayers();
             changeBackground('mode-selection');
         });
     </script>
